@@ -11,7 +11,7 @@ function NewsArticle({author, title, description, url, urlToImage, publishedAt})
                     <p>{publishedAt}</p>
                 </div>
                 <p className="article-description">{description}</p>
-                <a href={url} target="_blank" className="btn-read-more">Read More</a>
+                <a href={url}  target="_blank" rel="noreferrer" className="btn-read-more">Read More</a>
             </div>
         </>
     )
