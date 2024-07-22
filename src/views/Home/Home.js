@@ -10,7 +10,7 @@ function Home() {
     const loadNews = useCallback(async () => {
         try {
             const response = await axios.get(
-                `https://newsapi.org/v2/everything?q=${searchQuery}&from=2024-06-22&sortBy=publishedAt&apiKey=${process.env.REACT_APP_API_KEY}`
+                `https://newsapi.org/v2/everything?q=${searchQuery}&from=2024-06-22&sortBy=publishedAt&apiKey=4c087080cb8f475aa10b90f62dd9ec26`
             );
             setNews(response.data.articles);
         } catch (error) {
